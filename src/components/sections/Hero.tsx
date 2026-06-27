@@ -1,9 +1,9 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react";
+import { useRef } from "react";
 import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { ArrowRight, ChevronDown, Phone, Sparkles } from "lucide-react";
+import { ArrowRight, Phone, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/components/providers/LanguageProvider";
 import { COMPANY, TEL_LINK } from "@/lib/constants";
@@ -11,8 +11,6 @@ import { COMPANY, TEL_LINK } from "@/lib/constants";
 export function Hero() {
   const ref = useRef<HTMLDivElement>(null);
   const { t } = useLanguage();
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => setMounted(true), []);
 
   const { scrollYProgress } = useScroll({
     target: ref,

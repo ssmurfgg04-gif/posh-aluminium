@@ -10,7 +10,7 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import * as Icons from "lucide-react";
+import { DynamicIcon } from "@/components/ui/dynamic-icon";
 
 interface ServiceData {
   id: string;
@@ -32,15 +32,9 @@ interface ServiceModalProps {
   onOpenChange: (o: boolean) => void;
 }
 
-function getIcon(name: string) {
-  const Icon = (Icons as Record<string, any>)[name] ?? Icons.Building2;
-  return Icon;
-}
-
 export function ServiceModal({ service, open, onOpenChange }: ServiceModalProps) {
   if (!service) return null;
 
-  const Icon = getIcon(service.icon);
   const benefits: string[] = JSON.parse(service.benefits);
   const specifications: { label: string; value: string }[] = JSON.parse(service.specifications);
   const gallery: string[] = JSON.parse(service.gallery);
@@ -72,7 +66,7 @@ export function ServiceModal({ service, open, onOpenChange }: ServiceModalProps)
             </button>
             <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
               <div className="h-14 w-14 rounded-2xl glass border border-white/25 flex items-center justify-center backdrop-blur-md mb-3">
-                <Icon className="h-7 w-7 text-white" />
+                <DynamicIcon name={service.icon} className="h-7 w-7 text-white" />
               </div>
               <h2 className="font-display font-black text-3xl sm:text-4xl text-white tracking-tight">
                 {service.title}

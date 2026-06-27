@@ -3,8 +3,8 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowUpRight, Check } from "lucide-react";
-import * as Icons from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { DynamicIcon } from "@/components/ui/dynamic-icon";
 
 interface ServiceData {
   id: string;
@@ -22,11 +22,6 @@ interface ServiceData {
 interface ServicesProps {
   services: ServiceData[];
   onSelect: (s: ServiceData) => void;
-}
-
-function getIcon(name: string) {
-  const Icon = (Icons as Record<string, any>)[name] ?? Icons.Building2;
-  return Icon;
 }
 
 export function Services({ services, onSelect }: ServicesProps) {
@@ -74,7 +69,6 @@ export function Services({ services, onSelect }: ServicesProps) {
         {/* Service cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
           {services.map((service, i) => {
-            const Icon = getIcon(service.icon);
             const benefits: string[] = JSON.parse(service.benefits);
 
             return (
@@ -107,7 +101,7 @@ export function Services({ services, onSelect }: ServicesProps) {
                 <div className="absolute inset-0 p-6 sm:p-7 flex flex-col justify-end text-white">
                   {/* Icon top-right */}
                   <div className="absolute top-6 right-6 h-12 w-12 rounded-2xl glass border border-white/25 flex items-center justify-center backdrop-blur-md">
-                    <Icon className="h-6 w-6 text-white" />
+                    <DynamicIcon name={service.icon} className="h-6 w-6 text-white" />
                   </div>
 
                   {/* Number badge */}

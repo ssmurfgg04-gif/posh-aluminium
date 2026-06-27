@@ -12,19 +12,19 @@ interface LanguageContextValue {
 
 const LanguageContext = createContext<LanguageContextValue | undefined>(undefined);
 
+function getInitialLang(): Language {
+  if (typeof window === "undefined") return "en";
+  const stored = localStorage.getItem("posh-lang") as Language | null;
+  if (stored === "en" || stored === "sw") return stored;
+  return "en";
+}
+
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [lang, setLangState] = useState<Language>("en");
+  const [lang, setLangState] = useState<Language>(getInitialLang);
 
   useEffect(() => {
-    const stored = (typeof window !== "undefined" && localStorage.getItem("posh-lang")) as Language | null;
-    if (stored === "en" || stored === "sw") setLangState(stored);
-  }, []);
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      localStorage.setItem("posh-lang", lang);
-      document.documentElement.lang = lang;
-    }
+    localStorage.setItem("posh-lang", lang);
+    document.documentElement.lang = lang;
   }, [lang]);
 
   const setLang = (l: Language) => setLangState(l);
