@@ -1,0 +1,101 @@
+// Posh Aluminium & Glass — Database schema
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Project {
+  id          String   @id @default(cuid())
+  title       String
+  slug        String   @unique
+  category    String   // commercial | residential | hospital | school | hotel | apartment
+  location    String
+  year        Int
+  client      String?
+  coverImage  String
+  gallery     String   // JSON array of image URLs
+  summary     String
+  description String
+  scope       String   // JSON array of work items
+  duration    String?
+  value       String?  // e.g. "KSh 45M"
+  featured    Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Service {
+  id            String   @id @default(cuid())
+  slug          String   @unique
+  title         String
+  tagline       String
+  description   String
+  benefits      String   // JSON array
+  specifications String  // JSON array of {label, value}
+  icon          String   // lucide icon name
+  coverImage    String
+  gallery       String   // JSON array
+  faqs          String   // JSON array of {q, a}
+  order         Int      @default(0)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model Testimonial {
+  id        String   @id @default(cuid())
+  name      String
+  role      String
+  company   String?
+  rating    Int      @default(5)
+  quote     String
+  avatar    String?
+  videoUrl  String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model QuoteRequest {
+  id          String   @id @default(cuid())
+  name        String
+  email       String
+  phone       String
+  projectType String   // residential | commercial | hospital | office | apartment
+  products    String   // JSON array
+  budget      String?
+  measurements String?
+  message     String
+  status      String   @default("new") // new | contacted | quoted | won | lost
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  phone     String?
+  subject   String?
+  message   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model FaqItem {
+  id        String   @id @default(cuid())
+  question  String
+  answer    String
+  category  String   @default("general")
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model NewsletterSub {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  createdAt DateTime @default(now())
+}
