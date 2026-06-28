@@ -5,8 +5,8 @@ import { ScrollProgress } from "@/components/layout/ScrollProgress";
 import { BackToTop } from "@/components/layout/BackToTop";
 import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
 import { HomeContent } from "@/components/HomeContent";
+import { StructuredData } from "@/components/seo/StructuredData";
 
-// Force dynamic so DB changes show up without rebuild
 export const dynamic = "force-dynamic";
 
 async function getData() {
@@ -73,6 +73,7 @@ export default async function Home() {
 
   return (
     <>
+      <StructuredData />
       <ScrollProgress />
       <Header />
       <HomeContent
