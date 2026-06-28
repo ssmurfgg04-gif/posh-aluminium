@@ -1,134 +1,85 @@
 "use client";
 
-import { useRef, useState, useCallback } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
-import { MoveHorizontal, Sparkles } from "lucide-react";
 
 export function BeforeAfter() {
-  const [position, setPosition] = useState(50);
-  const containerRef = useRef<HTMLDivElement>(null);
-  const isDragging = useRef(false);
-
-  const updatePosition = useCallback((clientX: number) => {
-    if (!containerRef.current) return;
-    const rect = containerRef.current.getBoundingClientRect();
-    const x = clientX - rect.left;
-    const pct = Math.max(0, Math.min(100, (x / rect.width) * 100));
-    setPosition(pct);
-  }, []);
-
-  const handleMouseDown = () => {
-    isDragging.current = true;
-  };
-  const handleMouseUp = () => {
-    isDragging.current = false;
-  };
-  const handleMouseMove = (e: React.MouseEvent) => {
-    if (isDragging.current) updatePosition(e.clientX);
-  };
-  const handleTouchMove = (e: React.TouchEvent) => {
-    if (isDragging.current && e.touches[0]) updatePosition(e.touches[0].clientX);
-  };
-
   return (
-    <section className="py-20 sm:py-28 lg:py-32 px-4 sm:px-6 lg:px-8 bg-navy dark:bg-card relative overflow-hidden">
-      {/* Decorative glow */}
-      <div className="absolute -top-32 left-1/2 -translate-x-1/2 h-64 w-[800px] bg-royal/20 blur-[120px] rounded-full pointer-events-none" />
+    <section className="py-24 sm:py-32 lg:py-40 px-4 sm:px-6 lg:px-8 bg-navy dark:bg-card relative overflow-hidden">
+      <div className="absolute -top-32 left-1/2 -translate-x-1/2 h-64 w-[800px] bg-royal/15 blur-[120px] rounded-full pointer-events-none" />
 
-      <div className="container mx-auto max-w-7xl relative">
-        {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
-          <motion.span
-            initial={{ opacity: 0, y: 12 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-royal-bright"
-          >
-            <Sparkles className="h-3.5 w-3.5" />
-            The Posh Difference
-          </motion.span>
+      <div className="container mx-auto max-w-6xl relative">
+        <div className="max-w-3xl mx-auto mb-12 text-center">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.05 }}
-            className="mt-4 font-display font-black text-4xl sm:text-5xl lg:text-6xl text-white tracking-tight"
+            className="font-display font-black text-4xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-[1.05]"
           >
-            Before &amp; After
+            The difference
+            <br />
+            <span className="font-light text-white/60 italic">is in the detail.</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.15 }}
-            className="mt-4 text-lg text-white/70"
+            transition={{ delay: 0.1 }}
+            className="mt-5 text-base sm:text-lg text-white/65 leading-relaxed max-w-[65ch] mx-auto"
           >
-            Drag the slider to see how Posh Aluminium transforms ordinary buildings into architectural statements.
+            A real renovation project: same building, same angle. The left shows the
+            dilapidated structure we surveyed. The right shows the completed transformation
+            after 14 weeks of fabrication and installation.
           </motion.p>
         </div>
 
-        {/* Slider */}
         <motion.div
           initial={{ opacity: 0, scale: 0.96 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          ref={containerRef}
-          onMouseMove={handleMouseMove}
-          onMouseUp={handleMouseUp}
-          onMouseLeave={handleMouseUp}
-          onTouchMove={handleTouchMove}
-          onTouchEnd={handleMouseUp}
-          className="relative aspect-[16/9] sm:aspect-[2/1] w-full rounded-3xl overflow-hidden shadow-premium cursor-ew-resize select-none"
+          className="relative aspect-[16/9] sm:aspect-[2/1] w-full rounded-3xl overflow-hidden shadow-premium"
         >
-          {/* After (full image) */}
-          <img
-            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80"
-            alt="After Posh Aluminium installation — premium residential villa with frameless glass"
-            className="absolute inset-0 h-full w-full object-cover"
-            loading="lazy"
+          <Image
+            src="https://sfile.chatglm.cn/images-ppt/dc59cdc0d708.jpg"
+            alt="Real before and after renovation: same building shown dilapidated on the left, restored and modern on the right"
+            fill
+            sizes="(max-width: 1024px) 100vw, 1024px"
+            className="object-cover"
+            quality={85}
           />
+          <div className="absolute top-4 left-4 px-3 py-1.5 rounded-full bg-navy text-white text-xs font-bold uppercase tracking-wider shadow-premium z-10">
+            Before
+          </div>
           <div className="absolute top-4 right-4 px-3 py-1.5 rounded-full bg-accent-red text-white text-xs font-bold uppercase tracking-wider shadow-red z-10">
             After
           </div>
-
-          {/* Before (clipped) */}
-          <div
-            className="absolute inset-0 overflow-hidden"
-            style={{ width: `${position}%` }}
-          >
-            <img
-              src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1920&q=80"
-              alt="Before Posh Aluminium installation — dated building façade"
-              className="absolute inset-0 h-full w-full object-cover"
-              style={{ width: `${100 / (position / 100)}%` }}
-              loading="lazy"
-            />
-            <div className="absolute inset-0 bg-navy/30" />
-            <div className="absolute top-4 left-4 px-3 py-1.5 rounded-full bg-navy text-white text-xs font-bold uppercase tracking-wider shadow-premium z-10">
-              Before
-            </div>
-          </div>
-
-          {/* Slider handle */}
-          <div
-            className="absolute top-0 bottom-0 z-20 pointer-events-none"
-            style={{ left: `${position}%`, transform: "translateX(-50%)" }}
-          >
-            <div className="h-full w-0.5 bg-white shadow-lg" />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-12 w-12 rounded-full bg-white shadow-premium flex items-center justify-center pointer-events-auto cursor-ew-resize"
-              onMouseDown={handleMouseDown}
-              onTouchStart={handleMouseDown}
-            >
-              <MoveHorizontal className="h-5 w-5 text-navy" />
-            </div>
-          </div>
         </motion.div>
 
-        {/* Helper text */}
-        <p className="text-center text-sm text-white/50 mt-4">
-          ← Drag to compare →
-        </p>
+        <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-px bg-white/10 rounded-2xl overflow-hidden">
+          {[
+            { value: "14 weeks", label: "From survey to handover" },
+            { value: "260 m²", label: "Glazing replaced" },
+            { value: "STC 38", label: "Acoustic upgrade" },
+            { value: "U-value 1.4", label: "Thermal performance" },
+          ].map((stat, i) => (
+            <motion.div
+              key={stat.label}
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 + i * 0.08 }}
+              className="bg-navy dark:bg-card p-5 sm:p-6 text-center"
+            >
+              <div className="font-display font-bold text-2xl sm:text-3xl text-white tracking-tight">
+                {stat.value}
+              </div>
+              <div className="text-xs text-white/55 mt-1.5 leading-snug">
+                {stat.label}
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );
