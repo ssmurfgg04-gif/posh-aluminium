@@ -24,11 +24,11 @@ async function main() {
       location: "Westlands, Nairobi",
       year: 2024,
       client: "Helios Group",
-      coverImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80",
+      coverImage: "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg",
       gallery: JSON.stringify([
-        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80",
-        "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80",
-        "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1600&q=80"
+        "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg",
+        "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg",
+        "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg"
       ]),
       summary: "Full-height unitized curtain walling system for a 22-storey Grade-A office tower.",
       description: "Posh Aluminium engineered, fabricated and installed a unitized curtain wall system spanning all 22 floors of this flagship tower in Westlands. The system achieves superior thermal performance, acoustic insulation and weather-tightness while delivering a sleek, monolithic exterior. High-performance Low-E double glazing was paired with custom-extruded aluminium mullions in a charcoal finish.",
@@ -44,11 +44,11 @@ async function main() {
       location: "Karen, Nairobi",
       year: 2024,
       client: "Private",
-      coverImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80",
+      coverImage: "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg",
       gallery: JSON.stringify([
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80",
-        "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=80",
-        "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=80"
+        "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg",
+        "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg",
+        "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg"
       ]),
       summary: "Frameless glass façade, slimline sliding doors and frameless shower cubicles.",
       description: "A contemporary residence set on a 1.2-acre plot in Karen. We delivered floor-to-ceiling frameless glass facades, slimline lift-and-slide doors opening to the garden, frameless glass shower cubicles and a custom-designed glass balustrade wrapping the swimming pool deck.",
@@ -64,11 +64,11 @@ async function main() {
       location: "Parklands, Nairobi",
       year: 2023,
       client: "Aga Khan Health Services",
-      coverImage: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=1920&q=80",
+      coverImage: "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg",
       gallery: JSON.stringify([
-        "https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=1600&q=80",
-        "https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=1600&q=80",
-        "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1600&q=80"
+        "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg",
+        "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg",
+        "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg"
       ]),
       summary: "Hygiene-grade aluminium partitions, hermetically sealed windows & cleanroom glazing.",
       description: "We delivered specialist aluminium and glazing solutions for the new cardiac wing at Aga Khan Hospital. The work included hermetically sealed operable windows for patient rooms, cleanroom-grade aluminium partitions for procedure areas, lead-lined viewing windows for imaging suites, and a striking curved curtain wall entrance canopy.",
@@ -84,10 +84,10 @@ async function main() {
       location: "Karen, Nairobi",
       year: 2023,
       client: "Brookhouse Schools",
-      coverImage: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1920&q=80",
+      coverImage: "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg",
       gallery: JSON.stringify([
-        "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1600&q=80",
-        "https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1600&q=80"
+        "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg",
+        "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg"
       ]),
       summary: "Acoustic aluminium partitions, security glazing & curtain-walled atrium.",
       description: "Brookhouse School's new science block required acoustic isolation between labs, security-rated glazing on ground-floor openings, and a daylight-filled central atrium. Posh delivered all three with a fully integrated aluminium and glass package.",
@@ -103,11 +103,11 @@ async function main() {
       location: "Upper Hill, Nairobi",
       year: 2024,
       client: "Radisson Hotel Group",
-      coverImage: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1920&q=80",
+      coverImage: "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg",
       gallery: JSON.stringify([
-        "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=80",
-        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1600&q=80",
-        "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1600&q=80"
+        "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg",
+        "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg",
+        "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg"
       ]),
       summary: "Hotel-room windows, acoustic partitions, frameless shower cubicles & sky-screening.",
       description: "For the 180-room expansion of Radisson Blu Upper Hill, we supplied and installed all aluminium and glassworks: high-acoustic window systems facing the busy Expressway, bathroom shower cubicles with anti-lime coating, corridor partitions with STC 38 acoustic rating, and rooftop sky-screening for the pool deck.",
@@ -123,10 +123,10 @@ async function main() {
       location: "Kilimani, Nairobi",
       year: 2024,
       client: "Cytonn Real Estate",
-      coverImage: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1920&q=80",
+      coverImage: "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg",
       gallery: JSON.stringify([
-        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=80",
-        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=80"
+        "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg",
+        "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg"
       ]),
       summary: "Balcony railings, sliding doors & privacy screens for 96 luxury apartments.",
       description: "A 96-unit luxury apartment development in Kilimani. Our scope covered glass-and-aluminium balcony railings across all units, slimline sliding doors with low-track profiles for step-out access, and perforated aluminium privacy screens on the building façade.",
@@ -142,10 +142,10 @@ async function main() {
       location: "Ruaka, Nairobi",
       year: 2022,
       client: "Centum Investment",
-      coverImage: "https://images.unsplash.com/photo-1517089596392-fb9a9033e05b?auto=format&fit=crop&w=1920&q=80",
+      coverImage: "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg",
       gallery: JSON.stringify([
-        "https://images.unsplash.com/photo-1517089596392-fb9a9033e05b?auto=format&fit=crop&w=1600&q=80",
-        "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1600&q=80"
+        "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg",
+        "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg"
       ]),
       summary: "Massive ETFE-skylit atrium curtain wall with custom mullion profiles.",
       description: "The 9,000 m² central atrium at Two Rivers Mall features a custom-engineered curtain wall with a pyramidal ETFE skylight overhead. Posh Aluminium designed, fabricated and installed the entire envelope to achieve best-in-class daylight transmission and energy performance.",
@@ -161,10 +161,10 @@ async function main() {
       location: "Muthaiga, Nairobi",
       year: 2023,
       client: "Private",
-      coverImage: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=80",
+      coverImage: "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg",
       gallery: JSON.stringify([
-        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=80",
-        "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=80"
+        "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg",
+        "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg"
       ]),
       summary: "Heritage-style steel-look aluminium partitions and oriel windows.",
       description: "A heritage residence in Muthaiga required steel-look glazing that matched its 1940s architecture but performed to modern standards. We delivered slim-profile aluminium partitions with glazing bars, a curved oriel window, and a frameless glass orangery roof.",
@@ -199,10 +199,10 @@ async function main() {
         { label: "Finishes", value: "PVDF / Anodized" }
       ]),
       icon: "Building2",
-      coverImage: "https://images.unsplash.com/photo-1460317442991-0ec209395118?auto=format&fit=crop&w=1600&q=80",
+      coverImage: "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg",
       gallery: JSON.stringify([
-        "https://images.unsplash.com/photo-1460317442991-0ec209395118?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80"
+        "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg",
+        "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg"
       ]),
       faqs: JSON.stringify([
         { q: "How tall can a curtain wall be?", a: "Our unitized systems are engineered for buildings up to 60 storeys. For taller projects we partner with international façade consultants." },
@@ -228,10 +228,10 @@ async function main() {
         { label: "Max panel", value: "300kg" }
       ]),
       icon: "DoorOpen",
-      coverImage: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80",
+      coverImage: "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg",
       gallery: JSON.stringify([
-        "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&w=1200&q=80"
+        "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg",
+        "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg"
       ]),
       faqs: JSON.stringify([
         { q: "Can the doors handle coastal weather?", a: "Yes — all hardware is marine-grade 316 stainless, with PVDF finishes rated for 25+ years in coastal environments." }
@@ -256,10 +256,10 @@ async function main() {
         { label: "Height", value: "Up to 4m" }
       ]),
       icon: "Columns3",
-      coverImage: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1600&q=80",
+      coverImage: "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg",
       gallery: JSON.stringify([
-        "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80"
+        "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg",
+        "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg"
       ]),
       faqs: JSON.stringify([
         { q: "Can we reconfigure later?", a: "Yes — our demountable system allows panels to be relocated without damage, reducing future fit-out costs." }
@@ -284,10 +284,10 @@ async function main() {
         { label: "Hinges", value: "180° pivot" }
       ]),
       icon: "ShowerHead",
-      coverImage: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1600&q=80",
+      coverImage: "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg",
       gallery: JSON.stringify([
-        "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1200&q=80"
+        "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg",
+        "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg"
       ]),
       faqs: JSON.stringify([]),
       order: 4
@@ -310,9 +310,9 @@ async function main() {
         { label: "Control", value: "Sun/wind/rain sensors" }
       ]),
       icon: "SunMedium",
-      coverImage: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80",
+      coverImage: "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg",
       gallery: JSON.stringify([
-        "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80"
+        "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg"
       ]),
       faqs: JSON.stringify([]),
       order: 5
@@ -335,9 +335,9 @@ async function main() {
         { label: "Fixing", value: "Base / Face" }
       ]),
       icon: "Fence",
-      coverImage: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1600&q=80",
+      coverImage: "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg",
       gallery: JSON.stringify([
-        "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80"
+        "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg"
       ]),
       faqs: JSON.stringify([]),
       order: 6
@@ -360,9 +360,9 @@ async function main() {
         { label: "Warranty", value: "10 years" }
       ]),
       icon: "Boxes",
-      coverImage: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1600&q=80",
+      coverImage: "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg",
       gallery: JSON.stringify([
-        "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1200&q=80"
+        "https://sfile.chatglm.cn/images-ppt/cae6ff5ddc5c.jpg"
       ]),
       faqs: JSON.stringify([]),
       order: 7
@@ -381,7 +381,7 @@ async function main() {
       company: "Helios Group",
       rating: 5,
       quote: "Posh Aluminium delivered our 22-storey curtain wall ahead of schedule and to international standards. Their shop-drawing team caught issues that would have cost us millions. They are now our default façade partner.",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+      avatar: null
     },
     {
       name: "Aisha Hassan",
@@ -389,7 +389,7 @@ async function main() {
       company: "Karen Residence",
       rating: 5,
       quote: "We built our dream home in Karen and Posh brought it to life. The slimline sliding doors are so smooth my 6-year-old can open them, and the frameless shower cubicles still look brand new after 2 years.",
-      avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
+      avatar: null
     },
     {
       name: "Dr. Peter Kamau",
@@ -397,7 +397,7 @@ async function main() {
       company: "Aga Khan Health Services",
       rating: 5,
       quote: "Healthcare projects have zero tolerance for shortcuts. Posh's hermetic windows passed every pressure test on the first attempt, and their cleanroom partitions exceeded our STC requirements. Truly professional.",
-      avatar: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=400&q=80"
+      avatar: null
     },
     {
       name: "Sarah Wanjiru",
@@ -405,7 +405,7 @@ async function main() {
       company: "Studio 21 Interiors",
       rating: 5,
       quote: "I specify Posh Aluminium on every premium residential project. Their attention to detail, finish quality and lead-time reliability is unmatched in Nairobi. Clients always notice the difference.",
-      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80"
+      avatar: null
     },
     {
       name: "Michael Otieno",
@@ -413,7 +413,7 @@ async function main() {
       company: "Centum Investment",
       rating: 5,
       quote: "On a 9,000 m² mall atrium with an ETFE skylight, you need a partner who understands structural movement. Posh engineered the system end-to-end. Two years on — zero leaks, zero callbacks.",
-      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+      avatar: null
     },
     {
       name: "Elizabeth Njoroge",
@@ -421,7 +421,7 @@ async function main() {
       company: "Radisson Blu Upper Hill",
       rating: 5,
       quote: "Acoustic windows facing the Expressway were non-negotiable for guest comfort. Posh delivered STC ratings that exceeded spec, on a 180-room project, ahead of schedule. Outstanding execution.",
-      avatar: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=400&q=80"
+      avatar: null
     }
   ];
 
