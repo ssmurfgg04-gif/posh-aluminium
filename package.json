@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 3000 2>&1 | tee dev.log",
-"build": "prisma generate && next build && mkdir -p .next/server/db && cp db/custom.db .next/server/db/custom.db && echo 'build complete'",
+"build": "node scripts/encode-db.mjs && prisma generate && next build && echo 'build complete'",
 "start": "NODE_ENV=production bun next start 2>&1 | tee server.log",
     "lint": "eslint .",
     "db:push": "prisma db push",
