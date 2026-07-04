@@ -11,24 +11,31 @@ function resolveDatabaseUrl(): string {
   if (!envUrl || !envUrl.startsWith('file:')) {
     return envUrl || ''
   }
-  // Prisma resolves file: URLs relative to the schema file's directory
-  // at build time. On serverless runtimes (Netlify), the schema directory
-  // doesn't exist. Compute an absolute path by searching likely locations.
+  const cwd = process.cwd()
   const candidates = [
-    path.join(process.cwd(), 'db', 'custom.db'),
-    path.join(process.cwd(), '..', 'db', 'custom.db'),
-    path.join(process.cwd(), '..', '..', 'db', 'custom.db'),
-    path.join(process.cwd(), '.next', 'db', 'custom.db'),
-    path.join(process.cwd(), '..', '.next', 'db', 'custom.db'),
+    // Database bundled in .next/server/db/ (inside function bundle)
+    path.join(cwd, '.next', 'server', 'db', 'custom.db'),
+    path.join(cwd, '..', '.next', 'server', 'db', 'custom.db'),
+    path.join(cwd, '..', '..', '.next', 'server', 'db', 'custom.db'),
+    // Database at repo root (build-time location)
+    path.join(cwd, 'db', 'custom.db'),
+    path.join(cwd, '..', 'db', 'custom.db'),
+    path.join(cwd, '..', '..', 'db', 'custom.db'),
+    path.join(cwd, '..', '..', '..', 'db', 'custom.db'),
+    // Database in .next/db/ (fallback)
+    path.join(cwd, '.next', 'db', 'custom.db'),
+    path.join(cwd, '..', '.next', 'db', 'custom.db'),
+    path.join(cwd, '..', '..', '.next', 'db', 'custom.db'),
   ]
   for (const c of candidates) {
     try {
       if (fs.statSync(c).isFile()) {
+        console.log('[db] found at', c)
         return `file:${c}`
       }
     } catch {}
   }
-  // Fall back to the env var (works at build time, fails at runtime on Netlify)
+  console.log('[db] not found. cwd:', cwd, 'envUrl:', envUrl)
   return envUrl
 }
 
