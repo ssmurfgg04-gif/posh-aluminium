@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "standalone",
+  experimental: {
+    serverComponentsExternalPackages: ["@prisma/client"],
+  },
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -29,9 +31,6 @@ const nextConfig: NextConfig = {
   },
   compress: true,
   poweredByHeader: false,
-  outputFileTracingIncludes: {
-    "/*": ["./prisma/**/*", "./node_modules/.prisma/**/*"],
-  },
 };
 
 export default nextConfig;
