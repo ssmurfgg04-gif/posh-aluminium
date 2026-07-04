@@ -29,6 +29,9 @@ const nextConfig: NextConfig = {
   },
   compress: true,
   poweredByHeader: false,
+  outputFileTracingIncludes: {
+    "/*": ["./prisma/**/*", "./node_modules/.prisma/**/*"],
+  },
 };
 
 export default nextConfig;
