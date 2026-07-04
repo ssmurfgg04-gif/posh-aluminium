@@ -48,10 +48,10 @@ export function Process() {
   const lineScale = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   return (
-    <section id="process" className="scroll-mt-nav py-20 sm:py-28 lg:py-32 px-4 sm:px-6 lg:px-8 relative">
+    <section id="process" className="scroll-mt-nav py-14 sm:py-16 px-4 sm:px-6 lg:px-8 relative">
       <div className="container mx-auto max-w-7xl">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
           <motion.span
             initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}

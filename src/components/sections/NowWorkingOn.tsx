@@ -12,7 +12,7 @@ const ACTIVE_PROJECTS = [
 
 export function NowWorkingOn() {
   return (
-    <section className="py-20 sm:py-24 px-4 sm:px-6 lg:px-8 border-y border-border bg-background">
+    <section className="py-14 sm:py-16 px-4 sm:px-6 lg:px-8 border-y border-border bg-background">
       <div className="container mx-auto max-w-7xl">
         <div className="max-w-3xl mb-10">
           <motion.h2

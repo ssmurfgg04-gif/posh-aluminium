@@ -45,7 +45,7 @@ export function FeaturedProjects({ projects }: FeaturedProjectsProps) {
   }, [projects, filter]);
 
   return (
-    <section id="projects" className="scroll-mt-nav py-20 sm:py-28 lg:py-32 px-4 sm:px-6 lg:px-8 bg-mist/50 dark:bg-card/30 relative">
+    <section id="projects" className="scroll-mt-nav py-14 sm:py-16 px-4 sm:px-6 lg:px-8 bg-mist/50 dark:bg-card/30 relative">
       <div className="container mx-auto max-w-7xl">
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-10">

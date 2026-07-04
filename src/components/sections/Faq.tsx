@@ -28,7 +28,7 @@ export function Faq({ faqs }: FaqProps) {
   const sorted = [...faqs].sort((a, b) => a.order - b.order);
 
   return (
-    <section id="faq" className="scroll-mt-nav py-20 sm:py-28 lg:py-32 px-4 sm:px-6 lg:px-8 relative">
+    <section id="faq" className="scroll-mt-nav py-14 sm:py-16 px-4 sm:px-6 lg:px-8 relative">
       <div className="container mx-auto max-w-4xl">
         {/* Header */}
         <div className="text-center mb-12">

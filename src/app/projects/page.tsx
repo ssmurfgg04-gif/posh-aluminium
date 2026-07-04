@@ -5,7 +5,6 @@ import { ScrollProgress } from "@/components/layout/ScrollProgress";
 import { BackToTop } from "@/components/layout/BackToTop";
 import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
 import { FeaturedProjects } from "@/components/sections/FeaturedProjects";
-import { BeforeAfter } from "@/components/sections/BeforeAfter";
 import { Testimonials } from "@/components/sections/Testimonials";
 import type { Metadata } from "next";
 
@@ -36,7 +35,6 @@ export default async function ProjectsPage() {
       <Header />
       <main id="main-content" className="flex-1 pt-20">
         <FeaturedProjects projects={data.projects} />
-        <BeforeAfter />
         <Testimonials testimonials={data.testimonials} />
       </main>
       <Footer />

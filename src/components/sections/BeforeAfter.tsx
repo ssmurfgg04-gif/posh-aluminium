@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export function BeforeAfter() {
   return (
-    <section className="py-24 sm:py-32 lg:py-40 px-4 sm:px-6 lg:px-8 bg-navy dark:bg-card relative overflow-hidden">
+    <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-navy dark:bg-card relative overflow-hidden">
       <div className="absolute -top-32 left-1/2 -translate-x-1/2 h-64 w-[800px] bg-royal/15 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="container mx-auto max-w-6xl relative">

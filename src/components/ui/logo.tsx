@@ -7,10 +7,10 @@ interface LogoProps {
 }
 
 /**
- * Posh Aluminium — logo matching the original brand asset.
- * "Posh" in scarlet red (#D62828) Pacifico script font.
- * "Aluminium" in black sans-serif, uppercase, tracked.
- * Stacked, centered, no icon.
+ * Posh Aluminium logo — exact match to original brand asset.
+ * "Posh" in vibrant red (#E31837) script/cursive font.
+ * "Aluminium" in dark gray (#333333) clean sans-serif, smaller, underneath.
+ * Stacked vertically, no icon.
  */
 export function Logo({
   className,
@@ -18,15 +18,13 @@ export function Logo({
   size = "md",
 }: LogoProps) {
   const isLight = variant === "light";
-  const poshColor = "#D62828";
-  const aluminiumColor = isLight
-    ? "rgba(255,255,255,0.78)"
-    : "#000000";
+  const poshColor = "#E31837";
+  const aluminiumColor = isLight ? "rgba(255,255,255,0.8)" : "#333333";
 
   const dims = {
-    sm: { posh: 32, aluminium: 11, gap: 2 },
-    md: { posh: 42, aluminium: 13, gap: 3 },
-    lg: { posh: 58, aluminium: 17, gap: 4 },
+    sm: { posh: 30, aluminium: 10, gap: 1 },
+    md: { posh: 38, aluminium: 12, gap: 2 },
+    lg: { posh: 52, aluminium: 15, gap: 3 },
   }[size];
 
   return (
@@ -41,9 +39,8 @@ export function Logo({
           fontFamily: "var(--font-pacifico), 'Brush Script MT', cursive",
           fontSize: `${dims.posh}px`,
           color: poshColor,
-          lineHeight: 0.95,
+          lineHeight: 0.9,
           fontWeight: 400,
-          letterSpacing: "0.5px",
         }}
       >
         Posh
@@ -55,9 +52,9 @@ export function Logo({
           color: aluminiumColor,
           lineHeight: 1,
           fontWeight: 600,
-          letterSpacing: "0.32em",
+          letterSpacing: "0.3em",
           textTransform: "uppercase",
-          paddingLeft: "0.32em",
+          paddingLeft: "0.3em",
         }}
       >
         Aluminium

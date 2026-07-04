@@ -54,13 +54,13 @@ export function WhyPosh() {
   const { t } = useLanguage();
 
   return (
-    <section id="about" className="scroll-mt-nav py-20 sm:py-28 lg:py-32 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <section id="about" className="scroll-mt-nav py-14 sm:py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       {/* Background grid */}
       <div className="absolute inset-0 bg-grid opacity-50 pointer-events-none" />
 
       <div className="container mx-auto max-w-7xl relative">
         {/* Header */}
-        <div className="max-w-3xl mb-14 sm:mb-20">
+        <div className="max-w-3xl mb-8 sm:mb-10">
           <motion.span
             initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}

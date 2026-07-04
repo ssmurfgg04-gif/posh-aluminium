@@ -24,9 +24,9 @@ const CAPABILITY_GROUPS = [
 
 export function Capabilities() {
   return (
-    <section id="capabilities" className="scroll-mt-nav py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-background">
+    <section id="capabilities" className="scroll-mt-nav py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-background">
       <div className="container mx-auto max-w-7xl">
-        <div className="max-w-3xl mb-16">
+        <div className="max-w-3xl mb-10">
           <motion.h2
             initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}

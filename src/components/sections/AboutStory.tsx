@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 
 export function AboutStory() {
   return (
-    <section id="story" className="scroll-mt-nav py-24 sm:py-32 px-4 sm:px-6 lg:px-8 bg-navy dark:bg-card relative overflow-hidden">
+    <section id="story" className="scroll-mt-nav py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-navy dark:bg-card relative overflow-hidden">
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-royal/8 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="container mx-auto max-w-7xl relative">
-        <div className="max-w-3xl mb-16">
+        <div className="max-w-3xl mb-10">
           <motion.h2
             initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}

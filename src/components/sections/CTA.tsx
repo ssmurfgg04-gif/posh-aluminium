@@ -11,7 +11,7 @@ export function CTA() {
   const { t } = useLanguage();
 
   return (
-    <section className="py-20 sm:py-24 px-4 sm:px-6 lg:px-8">
+    <section className="py-14 sm:py-16 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, scale: 0.96 }}

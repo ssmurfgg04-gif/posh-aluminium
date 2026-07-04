@@ -164,7 +164,7 @@ export function QuoteCalculator() {
   return (
     <section
       id="quote"
-      className="scroll-mt-nav py-20 sm:py-28 lg:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background via-mist/40 to-background dark:via-card/20 relative overflow-hidden"
+      className="scroll-mt-nav py-14 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background via-mist/40 to-background dark:via-card/20 relative overflow-hidden"
     >
       {/* Decorative */}
       <div className="absolute top-20 right-10 h-72 w-72 bg-royal/10 blur-[100px] rounded-full pointer-events-none" />

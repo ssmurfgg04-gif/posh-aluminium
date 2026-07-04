@@ -47,13 +47,13 @@ export function Testimonials({ testimonials }: TestimonialsProps) {
   return (
     <section
       id="testimonials"
-      className="scroll-mt-nav py-20 sm:py-28 lg:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-mist via-background to-mist dark:from-card/40 dark:via-background dark:to-card/40 relative overflow-hidden"
+      className="scroll-mt-nav py-14 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-mist via-background to-mist dark:from-card/40 dark:via-background dark:to-card/40 relative overflow-hidden"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
       <div className="container mx-auto max-w-7xl relative">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
+        <div className="text-center max-w-3xl mx-auto mb-8">
           <motion.span
             initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}
